@@ -65,7 +65,7 @@ const StoriesList = () => {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
+      <div className="flex items-center justify-center min-h-screen bg-linear-to-br from-slate-900 to-slate-800">
         <div className="text-center">
           <BiLoaderAlt className="text-blue-500 text-6xl mx-auto mb-4 animate-spin" />
           <p className="text-white text-lg">Loading stories...</p>
@@ -76,7 +76,7 @@ const StoriesList = () => {
 
   if (error) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
+      <div className="flex items-center justify-center min-h-screen bg-linear-to-br from-slate-900 to-slate-800">
         <div className="text-center">
           <p className="text-red-500 text-lg mb-4">Error: {error}</p>
           <button
